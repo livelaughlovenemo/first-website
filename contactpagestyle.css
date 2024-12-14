@@ -1,0 +1,77 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#home-button {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+#home-button img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+#home-button:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    transform: scale(1.1);
+}
+
+.contact-container {
+    text-align: center;
+}
+
+.picture-section {
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    height: 100%; 
+    margin-top: 20px; 
+}
+
+.picture-section img {
+    width: 350px; 
+    height: auto; 
+    border-radius: 20px; 
+    object-fit: cover; 
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 50px; 
+}
+
+.social-icons a img {
+    width: 100px; 
+    height: 100px;
+    object-fit: contain; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 50%; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.social-icons a img:hover {
+    transform: scale(1.3); 
+    box-shadow: 0 6px 12px rgba(255, 255, 255, 0.6); 
+}

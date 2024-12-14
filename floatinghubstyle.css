@@ -1,0 +1,40 @@
+#floating-hub {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.9);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    padding: 10px 20px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    z-index: 10000; 
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    display: none; 
+}
+
+#floating-hub a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 15px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+#floating-hub a:hover {
+    background-color: #ff8a00;
+    color: #000;
+    transform: scale(1.2); 
+}
+
+#floating-hub a.highlight {
+    background-color: #ff0080;
+    color: #fff;
+    border: 1px solid #ff0080;
+}
